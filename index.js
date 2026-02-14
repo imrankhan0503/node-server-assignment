@@ -54,7 +54,6 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // Items Route (HTML directly in JS)
  // Items Route (HTML directly in JS)
 if (path === "/items") {
   res.writeHead(200, { "Content-Type": "text/html" });
@@ -120,15 +119,14 @@ if (path === "/items") {
     });
   }
 
-  output += "</div>";
   res.end(output);
   return;
 }
 
 
   //  404 
-  res.writeHead(404, { "Content-Type": "text/html" });
-  res.end("<h1>404 - Page Not Found</h1>");
+//   res.writeHead(404, { "Content-Type": "text/html" });
+//   res.end("<h1>404 - Page Not Found</h1>");
 });
 
 // Start Server 

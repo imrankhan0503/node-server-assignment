@@ -122,11 +122,6 @@ if (path === "/items") {
   res.end(output);
   return;
 }
-
-
-  //  404 
-//   res.writeHead(404, { "Content-Type": "text/html" });
-//   res.end("<h1>404 - Page Not Found</h1>");
 });
 
 // Start Server 
